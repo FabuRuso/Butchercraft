@@ -1,0 +1,16 @@
+[
+{
+  "modid": "butchercraft",
+  "name": "ButcherCraft",
+  "description": "Indepth butchery mod",
+  "version": "0.2a",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Lance5057"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,162 @@
+{
+  "com/Lance5057/ButcherCraft/BCBlocks": {
+    "name": "com/Lance5057/ButcherCraft/BCBlocks",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+        "target": "com/Lance5057/ButcherCraft/BCBlocks",
+        "values": {
+          "modid": {
+            "value": "butchercraft"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerBlocks(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerItems(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      }
+    ]
+  },
+  "com/Lance5057/ButcherCraft/BCItems": {
+    "name": "com/Lance5057/ButcherCraft/BCItems",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+        "target": "com/Lance5057/ButcherCraft/BCItems",
+        "values": {
+          "modid": {
+            "value": "butchercraft"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerItems(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      }
+    ]
+  },
+  "com/Lance5057/ButcherCraft/Butchercraft": {
+    "name": "com/Lance5057/ButcherCraft/Butchercraft",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod;",
+        "target": "com/Lance5057/ButcherCraft/Butchercraft",
+        "values": {
+          "acceptedMinecraftVersions": {
+            "value": "[1.12.2]"
+          },
+          "dependencies": {
+            "value": "required-after:forge@[13.19.0.2129,)"
+          },
+          "modid": {
+            "value": "butchercraft"
+          },
+          "name": {
+            "value": "ButcherCraft"
+          },
+          "useMetadata": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "version": {
+            "value": "0.0.2a"
+          }
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/SidedProxy;",
+        "target": "proxy",
+        "values": {
+          "clientSide": {
+            "value": "com.Lance5057.ButcherCraft.proxy.ClientProxy"
+          },
+          "serverSide": {
+            "value": "com.Lance5057.ButcherCraft.proxy.CommonProxy"
+          }
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$Instance;",
+        "target": "instance"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V"
+      }
+    ]
+  },
+  "com/Lance5057/ButcherCraft/core/grill/GrillBlock": {
+    "name": "com/Lance5057/ButcherCraft/core/grill/GrillBlock",
+    "interfaces": [
+      "net/minecraft/block/ITileEntityProvider"
+    ]
+  },
+  "com/Lance5057/ButcherCraft/core/grill/GrillTileEntity": {
+    "name": "com/Lance5057/ButcherCraft/core/grill/GrillTileEntity",
+    "interfaces": [
+      "net/minecraft/util/ITickable"
+    ]
+  },
+  "com/Lance5057/ButcherCraft/core/meatgrinder/MeatGrinderBlock": {
+    "name": "com/Lance5057/ButcherCraft/core/meatgrinder/MeatGrinderBlock",
+    "interfaces": [
+      "net/minecraft/block/ITileEntityProvider"
+    ]
+  },
+  "com/Lance5057/ButcherCraft/core/meathook/MeatHookBlock": {
+    "name": "com/Lance5057/ButcherCraft/core/meathook/MeatHookBlock",
+    "interfaces": [
+      "net/minecraft/block/ITileEntityProvider"
+    ],
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+        "target": "com/Lance5057/ButcherCraft/core/meathook/MeatHookBlock",
+        "values": {
+          "modid": {
+            "value": "butchercraft"
+          }
+        }
+      }
+    ]
+  },
+  "com/Lance5057/ButcherCraft/core/tools/ToolEvents": {
+    "name": "com/Lance5057/ButcherCraft/core/tools/ToolEvents",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "DropCarcassEvent(Lnet/minecraftforge/event/entity/living/LivingDropsEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "SlaughterEvent(Lnet/minecraftforge/event/entity/living/LivingHurtEvent;)V"
+      }
+    ]
+  }
+}
